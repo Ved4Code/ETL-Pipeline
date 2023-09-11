@@ -3,8 +3,6 @@ import psycopg2
 from database.database_connect import DatabaseConnect
 from datetime import datetime,date
 
-
-
 app = Flask(__name__)
 
 db=DatabaseConnect()  # PostgreSQL database

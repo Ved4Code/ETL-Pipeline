@@ -2,7 +2,6 @@ import psycopg2
 import csv
 from database.user_auth import UserAuth
 
-
 class DatabaseConnect:
     '''
     To provide utilites to connect to our postgresql server

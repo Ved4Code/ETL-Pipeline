@@ -32,7 +32,6 @@ property_value={
 
 # print(property_fields.ye)
 
-
 def openBrowser(url):
     '''
     @brief: Opens the browser and adds google translator extension
@@ -137,7 +136,9 @@ def scrapeData():
     except:
         sleep(10)
     
+
     scrollDown(driver)
+
 
     data=extractData(driver)
     storeDataToCSV(data)
