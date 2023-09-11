@@ -1,4 +1,4 @@
-import re
+import re  # module for rwgular expression
 def cleandata(data):
     for row in data:
         for i in range(len(row)):
