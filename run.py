@@ -1,6 +1,7 @@
 from getpass import getpass
 import os
-from api_server.flask_server import runFlaskApp
+# from api_server.flask_server import runFlaskApp
+import api_server.flask_server
 from scrapper.scrape_data import scrapeData
 
 
@@ -42,7 +43,7 @@ if __name__ == '__main__':
     while True:
         if res=='y':
             scrapeData()
-            runFlaskApp()
+            api_server.flask_server.runFlaskApp()
             break
         elif res=='q':
             break

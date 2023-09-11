@@ -59,7 +59,7 @@ class DatabaseConnect:
             for row in data:
                 cursor.execute(
                     "INSERT into PropertyDetails(docno, doctype,Office,year,Buyername,Sellername,otherinfo,listno) VALUES (%s,%s,%s,%s,%s,%s,%s,%s);",
-                    (row[1],row[2], row[3],row[4],row[5],row[6],row[7],row[8])
+                    (row[2],row[3], row[4],row[5],row[6],row[7],row[8],row[9])
                 )
             conn.commit() # Commit changes in the database
             conn.close() # Closing the connection

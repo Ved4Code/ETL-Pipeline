@@ -141,5 +141,5 @@ def scrapeData():
 
     data=extractData(driver)
     storeDataToCSV(data)
-    cleandata(data)
-    insertIntoDatabase(data)
+    # cleandata(data)
+    insertIntoDatabase(cleandata(data))
