@@ -27,6 +27,7 @@ def partial_text_search():
     query = request.args.get('query', '')
     results = []
     data=db.executeQuery("SELECT * from PropertyDetails;")
+    
     data_dict = [{'id': row[0], 'docno': row[1], 'doctype': row[2], 'Office': row[3], 'year': row[4], 'Buyername': row[5], 'Sellername': row[6], 'otherinfo': row[7], 'listno': row[8]} for row in data]
 
     for item in data_dict:
